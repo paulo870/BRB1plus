@@ -527,6 +527,7 @@ else {
             audioPlayer.load();
             showAudioPlayer(); // <-- use the new function
             audioPlayer.controls = true;
+            audioPlayer.setAttribute("controlsList", "nodownload");
         });
 
         audioListContainer.appendChild(btn);
