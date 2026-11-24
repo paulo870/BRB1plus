@@ -540,7 +540,8 @@ window.addEventListener("click", () => {
 // VIDEO FUNCTIONALITY FOR UNIT 1
 // ==========================
 
-const videoBtn = document.querySelector('a img[alt="Videos"]').parentElement;
+const videoImage = document.querySelector('a img[alt="Videos"]');
+const videoBtn = videoImage?.parentElement;
 const videoListContainer = document.createElement("div");
 videoListContainer.id = "video-list-container";
 document.body.appendChild(videoListContainer);
